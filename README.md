@@ -1,5 +1,5 @@
 $login = 'diegonunesmkt2@gmail.com';
-$senha = '230106ka';
+$senha = '';
 
 $str_conexao = '{imap.gmail.com:993/imap/ssl}';
 if (!extension_loaded('imap')) {
@@ -11,9 +11,9 @@ if (!$mailbox) {
 }
 $check = imap_check($mailbox);
 
-echo $check->Date;
+$check->Date;
 
-echo $check->Driver;
+$check->Driver;
 
 $check->Mailbox;
 
