@@ -15,11 +15,11 @@ echo $check->Date;
 
 echo $check->Driver;
 
-echo $check->Mailbox;
+$check->Mailbox;
 
-echo $check->Nmsgs;
+$check->Nmsgs;
 
-echo $check->Recent;
+$check->Recent;
 $marcadores = imap_getmailboxes($mailbox, $str_conexao, '*');
 
 if (is_array($marcadores)) {
@@ -38,34 +38,34 @@ $overview = imap_fetch_overview($mailbox, 1);
 
 $email = current($overview);
 
-echo $email->subject;
+$email->subject;
 
-echo $email->from;
+$email->from;
 
-echo $email->to;
+$email->to;
 
-echo $email->date;
+$email->date;
 
-echo $email->message_id;
+$email->message_id;
 
-echo $email->references;
+$email->references;
 
-echo $email->in_reply_to;
+$email->in_reply_to;
 
-echo $email->size;
+$email->size;
 
-echo $email->uid;
+$email->uid;
 
-echo $email->msgno;
+$email->msgno;
 
-echo $email->recent;
+$email->recent;
 
-echo $email->flagged;
+$email->flagged;
 
-echo $email->answered;
+$email->answered;
 
-echo $email->deleted;
+$email->deleted;
 
-echo $email->seen;
+$email->seen;
 
-echo $email->draft;
+$email->draft;
